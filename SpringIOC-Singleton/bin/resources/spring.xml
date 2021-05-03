@@ -1,0 +1,13 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+<!-- by private constructor -->
+<bean id = "s" class="beans.Singleton" />
+
+<!-- singleton class -->
+<bean id ="s1" class ="beans.Singleton" factory-method = "getInstance" />
+<bean id ="s2" class ="beans.Singleton" factory-method = "getInstance" />
+
+</beans>
