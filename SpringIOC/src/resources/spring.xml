@@ -1,0 +1,27 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean class ="beans.Test" id = "t">
+
+<!-- Using type parameter for 2 parameterized constructors 
+
+<constructor-arg type="int" value="20" ></constructor-arg>
+-->
+
+
+<constructor-arg type="int" value="20" index="1"></constructor-arg>
+<constructor-arg type="java.lang.String" value="prerna" index="0"></constructor-arg>
+<constructor-arg type="java.lang.String" value="abc@gmail.com" index="2"></constructor-arg>
+
+
+<!--using setter methods in POJO Class
+
+<property name="name" value="prerna" /> 
+<property name="age" value="20" />
+<property name="email" value="abc@gmail.com"
+-->
+	
+</bean>
+
+</beans>			
+			
