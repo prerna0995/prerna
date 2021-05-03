@@ -1,0 +1,21 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+<!--  
+<bean class = "beans.Engine" id = "e">
+	<property name = "modelyear" value = "2015" />
+</bean>
+-->
+
+<bean class ="beans.Car" id = "c">
+	<property name="carname" value="AUDI" />
+	
+	<!-- the ref should be same as the id for engine class bean -->
+	<property name="engine" ref="e">
+		<!-- <ref bean = "e"/> -->
+	</property>
+	
+</bean>
+</beans>			
+			
