@@ -1,0 +1,35 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- by using static factory approach -->
+ <!--  
+<bean class = "org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name ="staticMethod" value = "factory.CarFactory.setCarName"/>
+		<property name = "arguments">
+			<list>
+				<value>cars.Audi</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id ="cf" class = "factory.CarFactory" factory-method="getCar" />
+-->
+
+  
+<!-- by using instance factory approach -->
+<!-- 
+	<bean id="cf" class="factory.CarFactory" >
+		<property name="carName" value="cars.BMW" />
+	</bean>
+	<bean id="c" factory-bean="cf" factory-method="getCar" />
+-->
+
+
+<!-- by using factory bean interface approach -->
+
+	<bean id="cf" class="factory.CarFactory">
+		<property name="carName" value="cars.Audi" />
+	</bean>
+</beans>
