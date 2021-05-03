@@ -1,0 +1,15 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-init-method="myInit" default-destroy-method="destroy">
+
+	<!-- <bean class ="beans.Car" id = "c" init-method="myInit" destroy-method="destroy"> -->
+	<bean class ="beans.Car" id = "c">
+		<property name="engine" ref="e"></property>
+	</bean>
+
+	<bean class ="beans.Engine" id ="e">
+		<property name="modelyear" value="2015"></property>	
+	</bean>
+</beans>			
+			
